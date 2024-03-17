@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 7px;
+    
+}
+
+body{    
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;    
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+header{
+    height: 46rem;
+    
+}
+.clearfix::after{
+    content: "";
+    display: block; /*tüm satırı kapsar*/
+    clear: both;
+}
+
+header .bg-images{
+    position: absolute;
+    background-image: url(images/kamera.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1; /* arka plana düşen yazıyı ön plana getirmek için kullanılır */
+}
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem; /* butondaki kenar ile yazı aralığını belirler*/
+    margin: 0.5rem 0; /* arka plana olan uzunluğu belirler*/
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    /*background-color: #fff;*/
+    color: #333;
+    
+}
+#section-a{
+    background-color: #aeaeae;
+    color: #333;
+    padding: 3.2rem;
+}
+
+#section-b{
+    padding: 2rem;
+}
+
+#section-b ul{
+    list-style: none; /*liste işaretlerini kaldırır*/
+}
+
+#section-b li{
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+#section-c{
+    background-color: #aeaeae;
+    color: #333;
+    padding: 5rem;
+}
+
+#section-d .box{
+    padding: 5rem;
+}
+ #section-d .box:first-child{ 
+    /*first-chil etiketi ile section'daki ilk parametrete ulaşılır.*/
+    background-color: darkslategray;
+ }
+ 
+ #section-d 
+
+ footer{
+    padding: 4rem;
+    background: black;
+ }
+ footer a{
+    color: darkgoldenrod;
+ }
+
+@media screen and (min-width:800px) {
+    
+    html{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    
+    html{
+        font-size: 11px;
+    }
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+
+}
+
+
+
+
